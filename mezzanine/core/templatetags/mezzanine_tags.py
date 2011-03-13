@@ -34,11 +34,15 @@ def set_short_url_for(context, token):
     request = context["request"]
     if getattr(obj, "short_url") is None:
         obj.short_url = request.build_absolute_uri(request.path)
-        args = {
-            "login": context["settings"].BLOG_BITLY_USER,
-            "apiKey": context["settings"].BLOG_BITLY_KEY,
-            "longUrl": obj.short_url,
-        }
+        args = {"login": None, "apiKey": None}
+        try:
+            args = {
+                "login": context["settings"].BLOG_BITLY_USER,
+                "apiKey": context["settings"].BLOG_BITLY_KEY,
+                "longUrl": obj.short_url,
+            }
+        except AttributeError:
+            pass
         if args["login"] and args["apiKey"]:
             url = "http://api.bit.ly/v3/shorten?%s" % urlencode(args)
             response = loads(urlopen(url).read())

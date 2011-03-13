@@ -47,9 +47,12 @@ def page_menu(context, token):
         except KeyError:
             user = None
             slug = ""
+        context["last_in_navigation"] = None
         for page in Page.objects.published(for_user=user).select_related(depth=2).order_by("_order"):
             page.set_menu_helpers(slug)
             pages[page.parent_id].append(page)
+            if page.in_navigation:
+                context["last_in_navigation"] = page
         context["menu_pages"] = pages
         context["on_home"] = slug == reverse("home")
     # ``branch_level`` must be stored against each page so that the

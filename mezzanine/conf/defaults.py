@@ -6,6 +6,22 @@ from django.utils.translation import ugettext as _
 
 from mezzanine.conf import register_setting
 
+register_setting(
+    name="SITE_TITLE",
+    label="Site Title",
+    description=_("Title that will display at the top of the site, and be "
+        "appended to the content of the HTML title tags on every page."),
+    editable=True,
+    default="Mezzanine",
+)
+
+register_setting(
+    name="SITE_TAGLINE",
+    label="Tagline",
+    description=_("A tag line that will appear at the top of all pages."),
+    editable=True,
+    default=_("An open source content management platform."),
+)
 
 register_setting(
     name="ADMIN_MENU_ORDER",
@@ -25,62 +41,62 @@ register_setting(
     editable=False,
     default=(),
 )
-
-register_setting(
-    name="BLOG_BITLY_USER",
-    label="bit.ly username",
-    description=_("Username for bit.ly URL shortening service."),
-    editable=True,
-    default="",
-)
-
-register_setting(
-    name="BLOG_BITLY_KEY",
-    label="bit.ly key",
-    description=_("Key for bit.ly URL shortening service."),
-    editable=True,
-    default="",
-)
-
-register_setting(
-    name="BLOG_POST_PER_PAGE",
-    label="Posts per page",
-    description=_("Number of blog posts to show on a blog listing page."),
-    editable=True,
-    default=5,
-)
-
-register_setting(
-    name="BLOG_POST_MAX_PAGING_LINKS",
-    label="Paging links",
-    description=_("Max number of paging links to show on a blog listing page."),
-    editable=True,
-    default=10,
-)
-
-register_setting(
-    name="BLOG_SLUG",
-    description=_("Slug of the page object for the blog."),
-    editable=False,
-    default="blog",
-)
-
-register_setting(
-    name="COMMENTS_DISQUS_SHORTNAME",
-    label="Disqus username",
-    description=_("Username for the http://disqus.com comments service."),
-    editable=True,
-    default="",
-)
-
-register_setting(
-    name="COMMENTS_DISQUS_KEY",
-    label="Disqus key",
-    description=_("API key for the http://disqus.com comments service."),
-    editable=True,
-    default="",
-)
-
+#
+#register_setting(
+#    name="BLOG_BITLY_USER",
+#    label="bit.ly username",
+#    description=_("Username for bit.ly URL shortening service."),
+#    editable=True,
+#    default="",
+#)
+#
+#register_setting(
+#    name="BLOG_BITLY_KEY",
+#    label="bit.ly key",
+#    description=_("Key for bit.ly URL shortening service."),
+#    editable=True,
+#    default="",
+#)
+#
+#register_setting(
+#    name="BLOG_POST_PER_PAGE",
+#    label="Posts per page",
+#    description=_("Number of blog posts to show on a blog listing page."),
+#    editable=True,
+#    default=5,
+#)
+#
+#register_setting(
+#    name="BLOG_POST_MAX_PAGING_LINKS",
+#    label="Paging links",
+#    description=_("Max number of paging links to show on a blog listing page."),
+#    editable=True,
+#    default=10,
+#)
+#
+#register_setting(
+#    name="BLOG_SLUG",
+#    description=_("Slug of the page object for the blog."),
+#    editable=False,
+#    default="blog",
+#)
+#
+#register_setting(
+#    name="COMMENTS_DISQUS_SHORTNAME",
+#    label="Disqus username",
+#    description=_("Username for the http://disqus.com comments service."),
+#    editable=True,
+#    default="",
+#)
+#
+#register_setting(
+#    name="COMMENTS_DISQUS_KEY",
+#    label="Disqus key",
+#    description=_("API key for the http://disqus.com comments service."),
+#    editable=True,
+#    default="",
+#)
+#
 register_setting(
     name="COMMENTS_DEFAULT_APPROVED",
     label="Auto-approve comments",
@@ -88,26 +104,26 @@ register_setting(
     editable=True,
     default=True,
 )
-
-register_setting(
-    name="COMMENTS_NUM_LATEST",
-    label="Admin comments",
-    description=_("Number of latest comments to show in the admin dashboard."),
-    editable=True,
-    default=5,
-)
-
-register_setting(
-    name="COMMENTS_UNAPPROVED_VISIBLE",
-    label="Show unapproved",
-    description=_("If ``True``, unapproved comments will have a placeholder "
-        "visible on the site with a 'waiting for approval' or "
-        "'comment removed' message based on the workflow around the "
-        "``COMMENTS_DEFAULT_APPROVED`` setting - if ``True`` then "
-        "the former message is used, if ``False`` then the latter."),
-    editable=True,
-    default=True,
-)
+#
+#register_setting(
+#    name="COMMENTS_NUM_LATEST",
+#    label="Admin comments",
+#    description=_("Number of latest comments to show in the admin dashboard."),
+#    editable=True,
+#    default=5,
+#)
+#
+#register_setting(
+#    name="COMMENTS_UNAPPROVED_VISIBLE",
+#    label="Show unapproved",
+#    description=_("If ``True``, unapproved comments will have a placeholder "
+#        "visible on the site with a 'waiting for approval' or "
+#        "'comment removed' message based on the workflow around the "
+#        "``COMMENTS_DEFAULT_APPROVED`` setting - if ``True`` then "
+#        "the former message is used, if ``False`` then the latter."),
+#    editable=True,
+#    default=True,
+#)
 
 register_setting(
     name="CONTENT_MEDIA_PATH",
@@ -267,22 +283,7 @@ register_setting(
     default=10,
 )
 
-register_setting(
-    name="SITE_TITLE",
-    label="Site Title",
-    description=_("Title that will display at the top of the site, and be "
-        "appended to the content of the HTML title tags on every page."),
-    editable=True,
-    default="Mezzanine",
-)
 
-register_setting(
-    name="SITE_TAGLINE",
-    label="Tagline",
-    description=_("A tag line that will appear at the top of all pages."),
-    editable=True,
-    default=_("An open source content management platform."),
-)
 
 register_setting(
     name="STOP_WORDS",
