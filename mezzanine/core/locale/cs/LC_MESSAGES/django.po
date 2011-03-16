@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-16 23:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n>1 && n<5 ? 1 : 2;\n"
+
+#: admin.py:40
+msgid "Meta data"
+msgstr ""
+
+#: fields.py:22
+#, python-format
+msgid "Could not import the value of settings.HTML_WIDGET_CLASS: %s"
+msgstr ""
+
+#: forms.py:57 models.py:199
+msgid "Order"
+msgstr "Pořadí"
+
+#: models.py:21
+msgid "Title"
+msgstr "Název"
+
+#: models.py:22
+msgid "URL"
+msgstr "URL"
+
+#: models.py:69
+msgid "Draft"
+msgstr "Návrh"
+
+#: models.py:70
+msgid "Published"
+msgstr "Publikovat"
+
+#: models.py:80
+msgid "Status"
+msgstr "Status"
+
+#: models.py:82
+msgid "Published from"
+msgstr "Publikováno od"
+
+#: models.py:83
+msgid "With published selected, won't be shown until this time"
+msgstr "Pokud vyberete datum publikace, nebude stránka zobrazena do dané doby."
+
+#: models.py:85
+msgid "Expires on"
+msgstr "Vyprší"
+
+#: models.py:86
+msgid "With published selected, won't be shown after this time"
+msgstr "Pokud vyberete datum vypršení, nebude stránka zobrazena od dané doby."
+
+#: models.py:88
+msgid "Description"
+msgstr "Popis"
+
+#: models.py:89 models.py:265
+msgid "Keywords"
+msgstr "Klíčová slova"
+
+#: models.py:150
+msgid "View on site"
+msgstr "Zobrazit na webu"
+
+#: models.py:160
+msgid "Content"
+msgstr "Obsah"
+
+#: models.py:242
+msgid "Author"
+msgstr "Autor"
+
+#: models.py:264
+msgid "Keyword"
+msgstr "Klíčové slovo"
+
+#: views.py:68
+msgid "Permission denied"
+msgstr "Nemáte oprávnění"
+
+#: templates/404.html:6
+msgid "Page not found"
+msgstr "Stránka nenalezena"
+
+#: templates/404.html:10
+msgid "The page you requested does not exist."
+msgstr "Stránka, kterou požadujete neexistuje."
+
+#: templates/500.html:6
+msgid "Error"
+msgstr "Chyba"
+
+#: templates/500.html:10
+msgid "Sorry, an error occurred."
+msgstr "Omlouváme se, vyskytla se chyba."
+
+#: templates/base.html:62
+msgid "Powered by"
+msgstr ""
+
+#: templates/base.html:65
+msgid "View Mobile Site."
+msgstr ""
+
+#: templates/index.html:5 templates/index.html.py:8
+#: templates/admin/index.html:39
+msgid "Home"
+msgstr "Domácí stránka"
+
+#: templates/index.html:12
+msgid "This is the homepage."
+msgstr "Toto je domácí stránka"
+
+#: templates/search_results.html:5 templates/search_results.html.py:6
+msgid "Search Results"
+msgstr "Výsledky vyhledávání"
+
+#: templates/search_results.html:12
+msgid "No results were found matching your query: "
+msgstr "Vašemu dotazu neodpovídají žádné výsledky:"
+
+#: templates/search_results.html:14
+msgid "Showing"
+msgstr "Zobrazení"
+
+#: templates/search_results.html:14
+msgid "to"
+msgstr ""
+
+#: templates/search_results.html:14 templates/includes/pagination.html:4
+msgid "of"
+msgstr ""
+
+#: templates/search_results.html:15
+msgid "results matching your query:"
+msgstr "výsledky odpovídající dotazu"
+
+#: templates/search_results.html:23
+msgid "read more"
+msgstr "číst dále"
+
+#: templates/admin/base_site.html:216
+msgid "Forgot password?"
+msgstr "Zapomněl/a jste heslo?"
+
+#: templates/admin/base_site.html:220
+msgid "Interface:"
+msgstr "Rozhraní:"
+
+#: templates/admin/base_site.html:224
+#: templates/includes/editable_toolbar.html:8
+#: templates/includes/editable_toolbar.html:10
+msgid "Admin"
+msgstr "Admin"
+
+#: templates/admin/base_site.html:228
+msgid "Site"
+msgstr "Stránka"
+
+#: templates/admin/index.html:41 templates/admin/includes/dropdown_menu.html:3
+msgid "Dashboard"
+msgstr "Přehled"
+
+#: templates/admin/includes/app_list.html:20
+msgid "Add"
+msgstr "Přidat"
+
+#: templates/admin/includes/app_list.html:27
+msgid "Change"
+msgstr "Změnit"
+
+#: templates/admin/includes/dynamic_inline.html:6
+msgid "Add another"
+msgstr "Přidat další"
+
+#: templates/admin/includes/recent_actions.html:4
+msgid "Recent Actions"
+msgstr "Resetovat Akce"
+
+#: templates/admin/includes/recent_actions.html:5
+msgid "My Actions"
+msgstr "Moje Akce"
+
+#: templates/admin/includes/recent_actions.html:9
+msgid "None available"
+msgstr "Nic není dostupné"
+
+#: templates/includes/editable_form.html:16
+msgid "Save"
+msgstr "Uložit"
+
+#: templates/includes/editable_form.html:17
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: templates/includes/editable_form.html:25
+msgid "Edit"
+msgstr "Změnit"
+
+#: templates/includes/editable_loader.html:108
+msgid "An error occurred"
+msgstr "Vyskytla se chyba"
+
+#: templates/includes/editable_toolbar.html:12
+msgid "Log out"
+msgstr "Odhlásit se"
+
+#: templates/includes/pagination.html:4
+msgid "Page"
+msgstr "Stránka"
+
+#: templates/includes/search.html:3
+msgid "Search"
+msgstr "Vyhledávání"
+
+#: templates/includes/search.html:6
+msgid "Go"
+msgstr "Přejít"
+
+#: templates/includes/search.html:9
+msgid "Use "
+msgstr "Použít"
+
+#: templates/includes/search.html:9
+msgid "quotes"
+msgstr "uvozovky"
+
+#: templates/includes/search.html:9
+msgid ""
+" for exact phrases, + to make a word or phrase required, and - to exclude a "
+"word or phrase."
+msgstr ""
