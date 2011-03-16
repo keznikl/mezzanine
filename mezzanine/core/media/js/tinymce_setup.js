@@ -26,7 +26,7 @@ tinyMCE.init({
     mode : "specific_textareas",
     editor_selector : "mceEditor",
     theme: "advanced",
-    language: "en",
+    language: "cs",
     dialog_type: "window",
     editor_deselector : "mceNoEditor",
     
@@ -87,16 +87,21 @@ tinyMCE.init({
     + "-dl,"
     + "-dd,"
     + "-dt,"
+    + "-table[border=0|cellspacing|cellpadding|width|frame|rules|height|align|summary|bgcolor|background|bordercolor],"
+    + "-tr[rowspan|width|height|align|valign|bgcolor|background|bordercolor],tbody,thead,tfoot,"
+    + "#td[colspan|rowspan|width|height|align|valign|bgcolor|background|bordercolor|scope],"
+    + "#th[colspan|rowspan|width|height|align|valign|scope],"
     + "br,"
-    + "img[class|src|alt=|width|height]," + 
-    + "-h2,-h3,-h4," + 
-    + "-pre," +
-    + "-blockquote," +
-    + "-code," + 
+    + "img[class|src|alt=|border=0|align<bottom?left?middle?right?top|style|width|height],"
+    //+ "table[class]," +
+    + "-h2,-h3,-h4,"
+    + "-pre,"
+    + "-blockquote,"
+    + "-code,"
     + "-div",
     extended_valid_elements: "pre[style],"
     + "a[name|class|href|target|title|onclick],"
-    + "img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name],"
+    //+ "img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name],"
     + "br[clearfix],"
     + "-p[class<clearfix?summary?code],"
     + "h2[class<clearfix],h3[class<clearfix],h4[class<clearfix],"
@@ -110,7 +115,6 @@ tinyMCE.init({
     +"param[id|name|type|value|valuetype<DATA?OBJECT?REF],",
     valid_child_elements : ""
     + "h1/h2/h3/h4/h5/h6/a[%itrans_na],"
-    + "table[thead|tbody|tfoot|tr|td],"
     + "strong/b/p/div/em/i/td[%itrans|#text],"
     + "body[%btrans|#text]"
 });
